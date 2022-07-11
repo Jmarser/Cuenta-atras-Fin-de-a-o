@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 100vw;
+    max-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.transition{
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+
+h1{
+    font-size: 4rem;
+    margin-top: 5rem;
+    font-weight: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.timer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.content__mensaje{
+    text-align: center;
+}
+
+.mensaje{
+    font-size: 3rem;
+    font-family: 'Dancing Script', cursive;
+    line-height: 1;
+    /* Propiedades para crear el texto con color degradado*/
+    background: linear-gradient(to right, #ED2EC7, blue, yellow, red, green);
+    background-clip: text;
+
+    -webkit-background-clip: text;/*Para asegurarnos que funciona en todos los navegadores */
+    -webkit-text-fill-color: transparent;
+}
+
+.big_text{
+    font-size: 6rem;
+    line-height: 1;
+    margin: 0 1.5rem;
+}
+
+.cd{
+    text-align: center;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: .5rem;
+    -webkit-border-radius: .5rem;
+    -moz-border-radius: .5rem;
+    -ms-border-radius: .5rem;
+    -o-border-radius: .5rem;
+}
+
+.cd span{
+    font-size: 2rem;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    padding: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgba(255, 255, 255, .2);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(255, 255, 255, .5);
+}
+
+.logo{
+    width: 2.5rem;
+}
+
+.logo__img{
+    width: 100%;
+}
+
+.author{
+    font-size: 1rem;
+    color: black;
+}
+
+
+@media screen and (max-width: 768px){
+    h1{
+        font-size: 3rem;
+        margin-top: 4rem;
+    }
+
+    .container{
+        margin-top: 4rem;
+    }
+
+    .big_text{
+        font-size: 3rem;
+    }
+
+    .cd span{
+        font-size: 1.5rem;
+    }
+
+    .logo{
+        width: 2rem;
+    }
+
+    .author{
+        font-size: .8rem;
+    }
+}
+
